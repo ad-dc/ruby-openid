@@ -104,7 +104,7 @@ module OpenID
   # Set the default fetcher to use the HTTP proxy defined in the environment
   # variable 'http_proxy'.
   def self.fetcher_use_env_http_proxy
-    proxy_string = ENV['http_proxy']
+    proxy_string = ENV['openid_proxy']
     return unless proxy_string
 
     proxy_uri = URI.parse(proxy_string)
